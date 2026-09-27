@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: #FFB400;
+    --cor-dark: #df9c00;
+    --texto: #FCFBF9;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    display: flex;
+    width:100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    font-family:"Roboto", sans-serif ;
+}
+
+.main {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    background-image: url(imagens/Jean\ Mobile.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #060604;
+    overflow: hidden;
+}
+
+.main::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    opacity: 1;
+    background-color: #060604;
+    z-index: 999;
+
+    animation: main-slider 2s ease-in-out forwards;
+}
+
+@keyframes main-slider {
+    90%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav__header {
+    padding: .75rem 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-principal);
+}
+
+.nav__logo a img {
+    max-width: 100px;
+     
+}
+
+.nav__menu__btn {
+    font-size: 1.8rem;
+    color: var(--texto);
+    cursor: pointer;
+}
+
+.nav__links {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--cor-principal);
+    transition: transform .5s;
+    z-index: -1;
+}
+
+.nav__links.open {
+    transform: translateY(100%);
+}
+
+.nav__links a {
+    color: var(--texto);
+    white-space: nowrap;
+
+}
+
+.header__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 10rem 2rem 4rem 2rem;
+}
+
+.header__container h1 {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 0 0.5rem;
+    flex-wrap: wrap;
+    font-weight: 800;
+    color: var(--texto);
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.header__container h1 span:nth-child(1) {
+    font-size: 6rem;
+    line-height: 5rem;
+}
+
+.header__container h1 span:nth-child(2) {
+    font-size: 2rem;
+}
+
+.header__container p {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    max-width: calc((var(--max-width))/2);
+    line-height: 1.75rem;
+    color: var(--texto);
+}
+.header__container p span.desconto {
+    color: var(--cor-principal);
+    font-weight: 600;
+}
+
+.header__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 1rem 1.5rem;
+    margin-bottom:1rem ;
+    outline: none;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    font-family: "Roboto";
+    border-radius: 50px;
+    background-color:transparent;
+    color: var(--texto);
+    transition: 0.3s;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-dark);
+    border-color: var(--cor-dark);
+
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 0.4rem;
+
+}
+
+.socials a {
+    display: inline-flex;
+    padding: 9px 10px ;
+    font-display: 1.2rem;
+    color: var(--texto);
+    border: 1px solid var(--cor-principal);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background-color: var(--cor-dark);
+    color: #060604;
+}
+
+
+@media (width > 600px) {
+    nav{
+        position: static;
+        padding: 2rem 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+
+    }
+
+    .nav__header {
+        width: fit-content;
+        padding: 0;
+        background-color: transparent;
+
+    }
+
+    .nav__logo a img {
+        max-width: 120px;
+    }
+
+    .nav__menu__btn {
+        display: none;
+
+    }
+
+    .nav__links {
+        position: static;
+        width: fit-content;
+        padding: 0;
+        margin-top: 8px;
+        flex-direction: row;
+        gap: 3rem;
+        background-color: transparent;
+        transform: none !important;
+        font-size: 15px;
+    }
+
+    .nav__links a:hover {
+        color: var(--cor-dark);
+    }
+
+    .main {
+        background-image: url(imagens/jean\ PC.jpg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #060604;
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        padding-top: 6rem;
+    }
+
+}
