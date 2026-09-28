@@ -41,3 +41,19 @@ ScrollReveal(). reveal ( ".socials li", {
     interval: 300,
 });
 
+ScrollReveal(). reveal ( ".btn", {
+    ...scrollRevealOption,
+    delay: 1200,
+});
+
+ScrollReveal(). reveal ( ".equipe", {
+    ...scrollRevealOption,
+    delay: 1100,
+});
+
+ScrollReveal(). reveal ( ".descricao", {
+    ...scrollRevealOption,
+    delay: 900,
+    interval: 300,
+});
+
