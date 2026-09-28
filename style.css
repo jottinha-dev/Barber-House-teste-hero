@@ -214,51 +214,6 @@ button:hover {
 }
  /* -- FIM DO HERO */
 
-#section-bh {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 2rem;
-    padding: 4rem 2rem;
-}
-
-#section-bh {
-    background-color: var(--fundo-main);
-    flex-direction: column-reverse;
-}
-
-  div.equipe img {
-    width: 250px;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-    border-radius: 25px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.493);
-}
-
-.descricao {
-    display: block;
-    text-align: center;
-    color: var(--texto);
-}
-
-.descricao h1 {
-    font-family: "Roboto Slab";
-    font-size: 3rem;
-    font-weight: 600;
-    padding-bottom: 2.5rem;
-    z-index: -999;
-}
-
-.descricao p {
-    text-align: justify;
-    font-size: 0.8rem;
-    width: 300px;
-    z-index: -999;
-
-}
-
-
 @media (min-width: 768px) and (max-width: 1200px) {
     
     .header__container {
@@ -276,26 +231,7 @@ button:hover {
 }
 
 
-@media (width < 768px) {
-    div.equipe {
-    img#mobile {display: block;}
-    img#pc { display: none;}
-}
-    #section-bh button.btn {
-        background-color: var(--cor-principal);
-        border: none;
-        font-size: 1rem;
-        padding: 1.2rem;
-    }
-
-    #section-bh button.btn:hover {
-        background-color: var(--cor-dark);
-    }
-
-}
-
-
-
+@media (width < 768px) {}
 @media (width > 600px) {
     nav{
         position: static;
@@ -370,20 +306,6 @@ button:hover {
     transition: 0.3s;
     gap: 3rem;
     cursor: pointer;
-
-}
-
-
-div.equipe {
-    img#mobile {display: none;}
-    img#pc { display: block;}
-}
-
- img#pc {
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 2/1;
-    ob
- }
+    }
 
 }
