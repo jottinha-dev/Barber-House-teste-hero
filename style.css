@@ -214,6 +214,64 @@ button:hover {
 }
  /* -- FIM DO HERO */
 
+/*SOBRE A EQUIPE SEÇÃO */
+
+.sobre-equipe {
+    padding: 6rem 2rem;
+    background-color: var(--fundo-main);
+}
+
+.sobre-equipe div.section-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+.sobre-equipe .imagem-equipe img#mobile-foto {
+    width: 330px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.582);
+
+}
+
+.titulo-conteudo {
+    text-align: center;
+    font-family: "Roboto Slab";
+    color: var(--texto);
+    line-height: 2.3rem;
+    font-size: 2rem;
+    padding-bottom: 25px;
+}
+
+.titulo-conteudo::after {
+    content: "";
+    width: 300px;
+    height: 5px;
+    display: block;
+    margin: 10px auto;
+    background-color: var(--cor-dark);
+    border-radius: 10px;
+}
+
+span {
+    font-weight:600;
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.sobre-equipe .conteudo .descricao {
+    line-height: 20px;
+    margin: 25px 0px 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--texto);
+}
+
+
 @media (min-width: 768px) and (max-width: 1200px) {
     
     .header__container {
@@ -231,7 +289,15 @@ button:hover {
 }
 
 
-@media (width < 768px) {}
+@media (width < 768px) {
+    .sobre-equipe .imagem-equipe {
+        img#pc-foto{ display: none;}
+        img#mobile-foto {display: block;}
+    }
+    .conteudo .botao-agenda {
+        display: none;
+    }
+}
 @media (width > 600px) {
     nav{
         position: static;
@@ -308,4 +374,67 @@ button:hover {
     cursor: pointer;
     }
 
+    .sobre-equipe {
+        padding: 2rem 4rem;
+        height: 100vh;
+        align-content: center;
+    }
+    .sobre-equipe div.section-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 100%;
+        gap: 150px;
+    }
+
+    .sobre-equipe .imagem-equipe {
+        img#mobile-foto { display: none;}
+        img#pc-foto { display: block;}
+    }
+
+    .sobre-equipe .imagem-equipe img#pc-foto {
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.582);
+    }
+    
+    .sobre-equipe .section-content .conteudo {
+        height: 100%;
+        width: 100%;
+    }
+    .titulo-conteudo {
+        text-align: left;
+        padding: 50px 0px 20px 0px;
+        margin: 0px;
+    }
+
+    .titulo-conteudo::after {
+    display: block;
+    content: "";
+    width: 300px;
+    height: 5px;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    background-color: var(--cor-dark);
+    border-radius: 10px;
+}
+
+.sobre-equipe .section-content .conteudo .descricao {
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
+   
+}
+
+.conteudo .botao-agenda {
+    color: var(--texto);
+    font-family: "Roboto Slab";
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid var(--texto);
+    border-radius: 50px;
+    padding: 1rem 1rem 1.4rem 1rem;
+    width: fit-content;
+  
+}
 }
