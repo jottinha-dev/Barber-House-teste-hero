@@ -374,31 +374,16 @@ button:hover {
 }
 
 
-#section-bh {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 4rem 2rem;
-}
-
 div.equipe {
     img#mobile {display: none;}
     img#pc { display: block;}
 }
 
-div.equipe img#pc {
-    aspect-ratio: 2/1;
+ img#pc {
+    width: 100%;
     object-fit: cover;
-    width: 80%;
-    border: none;
-}
-
-
-
-#section-bh button.btn {
-    display: none;
-}
+    aspect-ratio: 2/1;
+    ob
+ }
 
 }
