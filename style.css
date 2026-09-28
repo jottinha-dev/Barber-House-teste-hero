@@ -32,7 +32,6 @@ ul {
 
 body{
     font-family:"Roboto", sans-serif ;
-    overflow: hidden;
 }
 
 .main {
@@ -175,7 +174,7 @@ button {
     margin-bottom:2rem ;
     outline: none;
     border: 1px solid white;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     font-family: "Roboto";
     border-radius: 50px;
     background-color:transparent;
@@ -229,10 +228,11 @@ button:hover {
 }
 
   div.equipe img {
-    width: 300px;
+    width: 250px;
     aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: 25px;
+    margin-bottom: 1.5rem;
     box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.493);
 }
 
@@ -252,6 +252,7 @@ button:hover {
 
 .descricao p {
     text-align: justify;
+    font-size: 0.8rem;
     width: 300px;
     z-index: -999;
 
@@ -281,8 +282,14 @@ button:hover {
     img#pc { display: none;}
 }
     #section-bh button.btn {
+        background-color: var(--cor-principal);
+        border: none;
         font-size: 1rem;
         padding: 1.2rem;
+    }
+
+    #section-bh button.btn:hover {
+        background-color: var(--cor-dark);
     }
 
 }
