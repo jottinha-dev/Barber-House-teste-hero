@@ -41,19 +41,23 @@ ScrollReveal(). reveal ( ".socials li", {
     interval: 300,
 });
 
-ScrollReveal(). reveal ( ".btn", {
+ScrollReveal(). reveal ( ".titulo-conteudo", {
     ...scrollRevealOption,
-    delay: 1200,
+    delay: 800,
 });
 
-ScrollReveal(). reveal ( ".equipe", {
+ScrollReveal(). reveal ( ".imagem-equipe", {
     ...scrollRevealOption,
-    delay: 1100,
+    delay: 100,
 });
 
 ScrollReveal(). reveal ( ".descricao", {
     ...scrollRevealOption,
     delay: 900,
-    interval: 300,
+});
+
+ScrollReveal(). reveal ( ".botao-agenda", {
+    ...scrollRevealOption,
+    delay: 1000,
 });
 

@@ -6,6 +6,7 @@
     --cor-principal: #FFB400;
     --cor-dark: #df9c00;
     --fundo-main: rgb(46, 46, 46);
+    --fundo-dois:#171717;
     --texto: #FCFBF9;
     --max-width: 1200px;
 }
@@ -217,7 +218,7 @@ button:hover {
 /*SOBRE A EQUIPE SEÇÃO */
 
 .sobre-equipe {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     background-color: var(--fundo-main);
 }
 
@@ -229,7 +230,7 @@ button:hover {
 }
 
 .sobre-equipe .imagem-equipe img#mobile-foto {
-    width: 330px;
+    width: 100%;
     aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: 25px;
@@ -270,7 +271,77 @@ span {
     font-weight: 200;
     color: var(--texto);
 }
+     /* -- FIM DA SEÇÃO EQUIPE  */
 
+
+
+    /* INICIO DA SEÇÃO SERVIÇOS */
+
+    #servicos {
+        display: block;
+        padding: 4rem 0rem 0rem 0rem;
+        background-color: var(--fundo-dois);
+        width: 100%;
+        height: fit-content;
+        color: var(--texto);
+    }
+
+    #servicos .titulo-section {
+        text-align: center;
+        font-family:"Kumbh Sans";
+        padding: 0px 0px 2rem 0px;
+    }
+
+    .container-servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 50px;
+        height: 100vh;
+        overflow-x: hidden;
+        padding: 2rem 0rem;
+    }
+
+    .catalago {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .imagem .foto-corte {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-position: center bottom;
+        object-fit: cover;
+        overflow: hidden;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .nome-corte .corte {
+        padding: 10px 0px 5px 0px ;
+    }
+
+    .nome-corte .descricao-corte {
+        text-align: left;
+        padding-bottom: 30px;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        font-weight: 200;
+    }
+
+    .catalago .linha {
+        width: 100%;
+        height: 2px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        margin: 3px 0px 0px 0px ;
+    }
 
 @media (min-width: 768px) and (max-width: 1200px) {
     
@@ -297,6 +368,7 @@ span {
     .conteudo .botao-agenda {
         display: none;
     }
+
 }
 @media (width > 600px) {
     nav{
@@ -429,12 +501,33 @@ span {
     color: var(--texto);
     font-family: "Roboto Slab";
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     border: 1px solid var(--texto);
     border-radius: 50px;
-    padding: 1rem 1rem 1.4rem 1rem;
-    width: fit-content;
+    padding: 1rem 1rem 1.2rem 1rem;
+    width: 200px;
   
 }
+
+#servicos .titulo-section {
+    font-family: "Roboto Slab";
+    font-weight: 800;
+    font-size: 3.2rem;
+    padding: 0px;
+}
+
+.container-servicos {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100vh;
+    padding: 0rem 5rem 2rem 5rem;
+
+}
+.catalago {
+    width: 350px;
+}
+
 }
