@@ -260,7 +260,6 @@ button:hover {
 span {
     font-weight:600;
     font-size: 2rem;
-    color: var(--cor-principal);
 }
 
 .sobre-equipe .conteudo .descricao {
