@@ -527,6 +527,13 @@ span {
    
 }
 
+.botao-agenda i.ri-arrow-right-line{
+    position: absolute;
+    margin-top: 2.2px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
 .conteudo .botao-agenda {
     color: var(--texto);
     font-family: "Roboto Slab";
@@ -539,6 +546,8 @@ span {
     width: 200px;
   
 }
+
+
 
 #servicos {
     padding-bottom: 2rem;
