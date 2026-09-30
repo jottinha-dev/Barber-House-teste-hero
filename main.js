@@ -61,3 +61,85 @@ ScrollReveal(). reveal ( ".botao-agenda", {
     delay: 1000,
 });
 
+    /*SEÇÃO SERVIÇOS */
+
+ScrollReveal(). reveal ( ".titulo-section", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 400,
+});
+
+
+ScrollReveal(). reveal ( ".imagem", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 400,
+});
+
+ScrollReveal(). reveal ( ".botao", {
+    ...scrollRevealOption,
+    delay: 1400,
+    interval: 400,
+});
+
+ScrollReveal(). reveal ( ".nome-corte", {
+    ...scrollRevealOption,
+    delay: 1200,
+    interval: 300,
+});
+
+ScrollReveal(). reveal ( ".rodape", {
+    ...scrollRevealOption,
+    delay: 1300,
+    interval: 400,
+});
+
+ScrollReveal(). reveal ( ".linha", {
+    ...scrollRevealOption,
+    delay: 1300,
+    interval: 400,
+});
+
+/* FIM DA SEÇÃO SERVIÇOS */
+
+
+/* SWAPPER AVALIAÇOES */
+
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCrusor: true,
+  spaceBetWeen: 25,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  //responsivite breakpoints
+  breakpoints: {
+    0: {
+        slidesPerView: 1 
+    },
+    768: {
+        slidesPerView: 2 
+    },
+    1024: {
+        slidesPerView: 3
+    },
+  },
+
+});
+
+/* SWAPPER AVALIAÇOES */
+
+
+
+

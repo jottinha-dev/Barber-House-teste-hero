@@ -280,7 +280,8 @@ span {
     #servicos {
         display: block;
         padding: 3.6rem 0rem 0rem 0rem;
-        background-color: var(--fundo-dois);
+        background: #171717;
+        background: linear-gradient(1deg,rgba(23, 23, 23, 1) 0%, rgba(46, 46, 46, 1) 100%);
         width: 100%;
         height: fit-content;
         color: var(--texto);
@@ -288,8 +289,9 @@ span {
 
     #servicos .titulo-section {
         text-align: center;
-        font-family:"Kumbh Sans";
+        font-family:"Roboto Slab";
         font-size: 2rem;
+        font-weight: 800;
         padding: 0px 2px 2rem 2px;
     }
 
@@ -299,7 +301,7 @@ span {
         align-items: center;
         justify-content: space-evenly;
         gap: 50px;
-        
+        overflow: hidden;
         overflow-x: hidden;
         padding: 2rem 0rem;
     }
@@ -318,6 +320,7 @@ span {
         overflow: hidden;
         display: block;
         border-radius: 5px;
+        box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.582);
     }
 
     .nome-corte .corte {
@@ -371,6 +374,68 @@ span {
     font-weight: 400;
 }
 
+    /* FIM DA SEÇAO SERVIÇOS */
+
+    /*INICIO  DA SECAO AVALIACOES */
+
+.section-avaliacoes {
+    padding: 3.6rem 1rem ;
+}
+
+.titulo-avaliacoes {
+        text-align: center;
+        font-family:"Roboto Slab";
+        font-weight: 800;
+        font-size: 3rem;
+        padding: 0px 2px 2rem 2px;
+}
+
+.section-avaliacoes .avaliacao {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-avaliacoes .avaliacao .profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.section-avaliacoes .avaliacao .name {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: "Kumbh Sans";
+    padding-top: 10px;
+}
+
+.section-avaliacoes .avaliacao .feedback {
+    line-height: 20px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.section-avaliacoes .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-principal);
+}
+
+.section-avaliacoes  {
+    background-color: var(--fundo-dois);
+    color: var(--texto);
+}
+.swiper-slide-button {
+    color: var(--cor-principal);
+    margin-top: -50px;
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
     
     .header__container {
@@ -385,6 +450,7 @@ span {
         display: flex;
         justify-content: space-around;
     }
+
 }
 
 
@@ -396,6 +462,11 @@ span {
     .conteudo .botao-agenda {
         display: none;
     }
+
+    .swiper-slide-button {
+    color: var(--cor-principal);
+    margin-top: -200px;
+}
 
 }
 @media (width > 600px) {
@@ -477,7 +548,7 @@ span {
         /* FIM DO HERO */
 
     .sobre-equipe {
-        padding: 2rem 4rem;
+        padding: 2rem 4rem 0rem 4rem;
         height: 100vh;
         align-content: center;
     }
@@ -544,20 +615,22 @@ span {
     border-radius: 50px;
     padding: 1rem 1rem 1.2rem 1rem;
     width: 200px;
+    margin-top: 70px;
   
 }
 
 
 
 #servicos {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 0rem;
 }
 
 #servicos .titulo-section {
     font-family: "Roboto Slab";
     font-weight: 800;
     font-size: 3.2rem;
-    padding: 0rem 0rem 2.5rem 0rem;
+    padding: 0rem 0rem 3rem 0rem;
 }
 
 .container-servicos {
@@ -571,6 +644,13 @@ span {
 }
 .catalago {
     width: 350px;
+}
+
+/* SECAO AVALIACOES */
+
+.section-avaliacoes .slider-wrapper {
+    overflow: hidden;
+    margin: 0px 60px 50px;
 }
 
 }
