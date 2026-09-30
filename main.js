@@ -138,6 +138,18 @@ const swiper = new Swiper('.slider-wrapper', {
 
 });
 
+ScrollReveal(). reveal ( ".slider-wrapper", {
+    ...scrollRevealOption,
+    delay: 1200,
+    interval: 400,
+});
+
+ScrollReveal(). reveal ( ".titulo-avaliacoes", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 400,
+});
+
 /* SWAPPER AVALIAÇOES */
 
 
