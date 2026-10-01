@@ -397,13 +397,16 @@ span {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    z-index: -1000;
 }
 
+
 .section-avaliacoes .avaliacao .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 50%;
+    z-index: -1000;
 }
 
 .section-avaliacoes .avaliacao .name {
@@ -411,6 +414,7 @@ span {
     font-size: 1rem;
     font-family: "Kumbh Sans";
     padding-top: 10px;
+    z-index: -1000;
 }
 
 .section-avaliacoes .avaliacao .feedback {
@@ -419,21 +423,64 @@ span {
     padding: 0px 10px 0px 10px;
     font-family: "Roboto";
     font-weight: 400;
+    width: 300px;
+    line-height: 17px;
+    z-index: -1000;
 }
 
 .section-avaliacoes .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     background-color: var(--cor-principal);
+    z-index: -1000;
 }
 
 .section-avaliacoes  {
     background-color: var(--fundo-dois);
     color: var(--texto);
+    z-index: -1000;
 }
 .swiper-slide-button {
     color: var(--cor-principal);
     margin-top: -50px;
+}
+
+/* FIM DA SEÇAO AVALIAÇÕES  */
+
+/* INICIO DA SEÇÃO LOCALIZAÇÃO */
+
+.section-location {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    font-family: "Roboto";
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.section-location .box-texto {
+    max-width: 600px;
+    align-self: flex-start;
+    padding-top: 64px;
+    gap: 50px;
+}
+
+.box-texto h1 {
+    font-size: 4em;
+    padding-bottom: 20px;
+    letter-spacing: 0.1px;
+}
+
+.box-texto p {
+    font-size: 1.2em;
+}
+iframe {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.281);
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -449,6 +496,10 @@ span {
     .nav__header{
         display: flex;
         justify-content: space-around;
+    }
+
+    .section-location {
+        flex-direction: column;
     }
 
 }
@@ -467,7 +518,33 @@ span {
     color: var(--cor-principal);
     margin-top: -200px;
 }
+ .section-location {
+        flex-direction: column;
+        iframe#local-mobile { display: block;}
+        iframe { display: none;}
+        gap: 35px;
+        padding: 2rem 2.5rem 2rem 2.5rem;
+    }
 
+ .section-location iframe#local-mobile {
+    width: 100%;
+ }
+
+ .box-texto {
+    width: 100%;
+ }
+.section-location .box-texto  h1 {
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 25px;
+    padding-top: 0px;
+    font-size: 3rem;
+}
+
+.section-location .box-texto  p {
+    text-align: justify;
+    
+}
 }
 @media (width > 600px) {
     nav{
@@ -546,6 +623,8 @@ span {
     }
 
         /* FIM DO HERO */
+
+        /* SECAO EQUIPE */
 
     .sobre-equipe {
         padding: 2rem 4rem 0rem 4rem;
@@ -648,8 +727,10 @@ span {
   }
 }
 
+    /* FIM DA SEÇAO EQUIPE */
 
 
+/* SECAO SERVIÇOS */
 
 #servicos {
     padding-bottom: 3rem;
@@ -676,11 +757,17 @@ span {
     width: 350px;
 }
 
+/* FIM DA SEÇAO SERVIÇOS */
+
 /* SECAO AVALIACOES */
 
 .section-avaliacoes .slider-wrapper {
     overflow: hidden;
     margin: 0px 60px 50px;
 }
-
+ /* FIM DA SEÇÃO AVALIAÇÕES */
+.section-location {
+ iframe#local-mobile { display: none;}
+ iframe { display: block;}
+}
 }
