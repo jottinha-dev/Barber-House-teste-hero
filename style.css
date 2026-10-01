@@ -397,7 +397,7 @@ span {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    z-index: -1000;
+    
 }
 
 
@@ -406,7 +406,7 @@ span {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    z-index: -1000;
+    
 }
 
 .section-avaliacoes .avaliacao .name {
@@ -414,7 +414,7 @@ span {
     font-size: 1rem;
     font-family: "Kumbh Sans";
     padding-top: 10px;
-    z-index: -1000;
+    
 }
 
 .section-avaliacoes .avaliacao .feedback {
@@ -423,22 +423,21 @@ span {
     padding: 0px 10px 0px 10px;
     font-family: "Roboto";
     font-weight: 400;
-    width: 300px;
     line-height: 17px;
-    z-index: -1000;
+    
 }
 
 .section-avaliacoes .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     background-color: var(--cor-principal);
-    z-index: -1000;
+
 }
 
 .section-avaliacoes  {
     background-color: var(--fundo-dois);
     color: var(--texto);
-    z-index: -1000;
+
 }
 .swiper-slide-button {
     color: var(--cor-principal);
