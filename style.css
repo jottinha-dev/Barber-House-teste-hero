@@ -459,7 +459,7 @@ span {
         img#pc-foto{ display: none;}
         img#mobile-foto {display: block;}
     }
-    .conteudo .butao {
+    .conteudo a.butao {
         display: none;
     }
 
