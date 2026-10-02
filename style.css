@@ -75,7 +75,8 @@ nav {
     position: fixed;
     isolation: isolate;
     width: 100%;
-    z-index: 9;
+    z-index: 1000;
+    
 }
 
 .nav__header {
@@ -371,7 +372,9 @@ span {
 .botao p.agendar:hover {
     background-color: rgb(223, 163, 0);
     color: black;
+    border-color: var(--cor-principal);
     font-weight: 400;
+     transform: scale(1.1);
 }
 
     /* FIM DA SEÇAO SERVIÇOS */
@@ -380,6 +383,9 @@ span {
 
 .section-avaliacoes {
     padding: 3.6rem 1rem ;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
 }
 
 .titulo-avaliacoes {
@@ -388,6 +394,8 @@ span {
         font-weight: 800;
         font-size: 3rem;
         padding: 0px 2px 2rem 2px;
+        position: relative;
+        z-index: 1;
 }
 
 .section-avaliacoes .avaliacao {
@@ -455,11 +463,48 @@ span {
     justify-content: center;
     gap: 5em;
     font-family: "Roboto";
-    background-color: var(--cor-principal);
+    background-color:var(--fundo-main);
     color: white;
     padding: 4rem 2rem;
 }
 
+.fundo-teste {
+    background-color: var(--cor-principal);
+    border-radius: 25px;
+    padding: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.logo-teste {
+    position: absolute;
+    left: 65px;
+    transform: translateY(190px);
+    width: 150px;
+}
+p.rua{
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+p.rua a {
+    color: var(--fundo-main);
+    text-decoration: none;
+    transition:  transform 0.3s ease;
+}
+
+p > i.ri-map-pin-line{
+    margin-left: 15px;
+    color: black;
+}
+p.rua a:hover {
+    color: var(--texto);
+    transform: scale(1.05)
+}
 .section-location .box-texto {
     max-width: 600px;
     align-self: flex-start;
@@ -474,7 +519,7 @@ span {
 }
 
 .box-texto p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 iframe {
     border-radius: 15px;
@@ -499,7 +544,34 @@ iframe {
 
     .section-location {
         flex-direction: column;
+        height: 70vh;
     }
+
+    .fundo-teste {
+        overflow: hidden;
+        width: 95%;
+        gap: 2em;
+    }
+    .section-location .box-texto {
+        max-width: 300px;
+        padding-top: 5px;
+        gap: 10px;
+    }
+
+    .box-texto h1 {
+    font-size: 3em;
+    padding-bottom: 10px;
+    letter-spacing: 0.1px;
+    line-height: 45px;
+}
+
+.logo-teste {
+    width: 100px;
+    left: 80px;
+}
+.box-texto p{
+    font-size: 14px;
+}
 
 }
 
@@ -517,12 +589,16 @@ iframe {
     color: var(--cor-principal);
     margin-top: -200px;
 }
+
+section.section-location {
+    height: 500px;
+    width: 100%;
+}
  .section-location {
         flex-direction: column;
         iframe#local-mobile { display: block;}
         iframe { display: none;}
-        gap: 35px;
-        padding: 2rem 2.5rem 2rem 2.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
     }
 
  .section-location iframe#local-mobile {
@@ -533,17 +609,35 @@ iframe {
     width: 100%;
  }
 .section-location .box-texto  h1 {
-    text-align: center;
-    line-height: 50px;
-    padding-bottom: 25px;
+    text-align: left;
+    line-height: 40px;
+    padding-bottom: 5px;
     padding-top: 0px;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .section-location .box-texto  p {
-    text-align: justify;
+    text-align: left;
     
 }
+    .fundo-teste {
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        gap: 1em;
+        padding: 1rem;
+    }
+    .section-location .box-texto {
+        max-width: 300px;
+        padding-top: 5px;
+        gap: 10px;
+    }
+
+.logo-teste {
+    display: none;
+}
+
+
 }
 @media (width > 600px) {
     nav{
@@ -719,6 +813,7 @@ iframe {
   }
   &:hover {
     color: #ffffff;
+    transform: scale(1.1);
     &:before {
       width: 100%;
       background-color: var(--cor-dark);
