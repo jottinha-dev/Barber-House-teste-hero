@@ -152,6 +152,10 @@ nav {
     font-size: 2rem;
 }
 
+.header__container span.seo-heading-location {
+    color: var(--texto);
+}
+
 .header__container p {
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -328,11 +332,13 @@ span {
 
     .nome-corte .corte {
         padding: 10px 0px 5px 0px ;
+        font-size: 2rem;
     }
 
     .nome-corte .descricao-corte {
         text-align: left;
         padding-bottom: 30px;
+        font-weight: 300;
     }
 
     .rodape {
@@ -489,24 +495,26 @@ span {
     transform: translateY(190px);
     width: 150px;
 }
-p.rua{
+address.rua{
     padding-top: 10px;
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
-p.rua a {
+address.rua a {
+    text-decoration: none;
+    font-style: normal;
     color: var(--fundo-main);
     text-decoration: none;
     transition:  transform 0.3s ease;
 }
 
-p > i.ri-map-pin-line{
+address > i.ri-map-pin-line{
     margin-left: 15px;
     color: black;
 }
-p.rua a:hover {
+address.rua a:hover {
     color: var(--texto);
     transform: scale(1.05)
 }
@@ -517,9 +525,9 @@ p.rua a:hover {
     gap: 50px;
 }
 
-.box-texto h1 {
+.box-texto h2 {
     font-size: 4em;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     letter-spacing: 0.1px;
 }
 
@@ -542,18 +550,76 @@ iframe {
 @media (min-width: 768px) and (max-width: 1200px) {
     
     .header__container {
-       margin-left: 4rem;
+       margin-left: 2rem;
     }
 
+    .main {
+        padding-inline: 2rem;
+    }
     .main div.nav__logo {
-        padding-left: 4rem;
+        padding-left: 1rem;
     }
 
     .nav__header{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 
+    .sobre-equipe {
+        padding: 2rem 4rem 0rem 4rem;
+        height: 100vh;
+        align-content: center;
+        display: block;
+        overflow: hidden;
+    }
+    .sobre-equipe div.section-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+
+    .sobre-equipe .imagem-equipe img#pc-foto {
+        object-fit: cover;
+        min-width: 0;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.582);
+    }
+    
+    .sobre-equipe .section-content .conteudo {
+         min-width: 0;
+    }
+    .titulo-conteudo {
+        text-align: left;
+        margin: 0px;
+    }
+
+    .titulo-conteudo::after {
+    display: block;
+    content: "";
+    width: 300px;
+    height: 5px;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    background-color: var(--cor-dark);
+    border-radius: 10px;
+}
+
+.sobre-equipe .section-content .conteudo .descricao {
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
+   
+}
+
+.sobre-equipe .imagem-equipe {
+        img#mobile-foto { display: block;}
+        img#pc-foto { display: none;}
+    }
+
+
+    /* SECAO LOCALIZAÇÃO */
     .section-location {
         flex-direction: column;
         height: 70vh;
@@ -577,7 +643,7 @@ iframe {
         padding: 1rem 1.5rem 1rem 1.5rem;
     }
 
-    .box-texto h1 {
+    .box-texto h2 {
     font-size: 3em;
     padding-bottom: 10px;
     letter-spacing: 0.1px;
@@ -636,7 +702,7 @@ section.section-location {
  .box-texto {
     width: 100%;
  }
-.section-location .box-texto  h1 {
+.section-location .box-texto  h2 {
     text-align: left;
     line-height: 40px;
     padding-bottom: 5px;
@@ -646,6 +712,8 @@ section.section-location {
 
 .section-location .box-texto  p {
     text-align: left;
+    font-size: 1em;
+    line-height: 16px;
     padding-bottom: 10px;
     
 }

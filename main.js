@@ -25,6 +25,11 @@ ScrollReveal(). reveal ( ".header__container h1", {
     delay: 1000,
 });
 
+ScrollReveal(). reveal ( ".header__container .seo-heading-location", {
+    ...scrollRevealOption,
+    delay: 1100,
+});
+
 ScrollReveal(). reveal ( ".header__container p", {
     ...scrollRevealOption,
     delay: 1200,
@@ -151,6 +156,32 @@ ScrollReveal(). reveal ( ".titulo-avaliacoes", {
 });
 
 /* SWAPPER AVALIAÇOES */
+
+
+/* LOCALIZAÇÃO ANIMAÇÃO */
+
+ScrollReveal(). reveal ( ".box-texto", {
+    ...scrollRevealOption,
+    delay: 900,
+    interval: 400,
+});
+
+ScrollReveal(). reveal ( ".logo-teste", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal(). reveal ( "iframe", {
+    ...scrollRevealOption,
+    delay: 1200,
+    interval: 400,
+});
+
+ScrollReveal(). reveal ( ".titulo-avaliacoes", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 400,
+});
 
 
 

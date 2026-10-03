@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BARBER HOUSE | Barbearia em Praia Grande - SP</title>
+
+    <meta name="description" content="BARBER HOUSE é uma barbearia em Praia Grande - SP especializada em cortes masculinos, barba e cuidados pessoais. Agende seu horário.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="BARBER HOUSE">
+    <meta name="theme-color" content="#111111">
+
+    <!-- SEO social: preparado para receber o domínio definitivo depois -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BARBER HOUSE | Barbearia em Praia Grande - SP">
+    <meta property="og:description" content="Cortes masculinos, barba e cuidados pessoais na BARBER HOUSE, em Praia Grande - SP.">
+    <meta property="og:site_name" content="BARBER HOUSE">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BARBER HOUSE | Barbearia em Praia Grande - SP">
+    <meta name="twitter:description" content="Cortes masculinos, barba e cuidados pessoais na BARBER HOUSE, em Praia Grande - SP.">
+
     <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-    <title>Site BARBER HOUSE</title>
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+    <link rel="icon" href="imagens/logo.favicon.png" type="image/png">
+
+     <!-- Dados estruturados: sem URL/canonical até o domínio definitivo existir -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+        "name": "BARBER HOUSE",
+        "description": "Barbearia em Praia Grande - SP especializada em cortes masculinos, barba e cuidados pessoais.",
+        "telephone": "+55 13 99749-4433",
+        "priceRange": "R$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Dair Borges, 36",
+            "addressLocality": "Praia Grande",
+            "addressRegion": "SP",
+            "postalCode": "11701-210",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -24.0057468,
+            "longitude": -46.4140756
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Praia Grande"
+        }
+    }
+    </script>
+    
     <!-- LINK SWIPPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <!-- CSS STYLE -->
@@ -37,6 +86,7 @@
 
         <div class="header__container">
             <h1><span>BARBER</span><br><span>HOUSE</span></h1>
+            <span class="seo-heading-location">Barbearia em Praia Grande - SP</span>
             <p>
                 Bem-vindo a Barber House! A casa do corte onde seu primeiro serviço, sai com <BR><span class="desconto">30% de desconto.</span>
             </p>
@@ -56,14 +106,14 @@
                     </a>
             </div>
             <ul class="socials">
-                <li><a href="https://share.google/4yQ6a9BtMCKTZSRFU" target="_blank" rel="noreferrer">
+                 <li><a href="https://share.google/4yQ6a9BtMCKTZSRFU" target="_blank" rel="noreferrer" aria-label="BARBER HOUSE no Google">
                     <i class="ri-google-fill"></i>
                 </a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram da BARBER HOUSE">
                     <i class="ri-instagram-line"></i>
                 </a></li>
                 <li><a href="https://wa.me/5513997494433?text=Oi,%20quero%20agendar%20um%20horário" target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp">
                     <i class="ri-whatsapp-line"></i>
                 </a></li>
                 <li><a href="#">
@@ -78,8 +128,8 @@
         <section id="sobre-equipe" class="sobre-equipe">
             <div class="section-content">
                 <div class="imagem-equipe">
-                    <img id="mobile-foto" src="imagens/equipe real-mobile.jpg" alt="foto">
-                    <img id="pc-foto" src="imagens/equipe-real-pc.jpg" alt="fotopc">
+                    <img id="mobile-foto" src="imagens/equipe real-mobile.jpg" alt="Equipe da BARBER HOUSE em Praia Grande" decoding="async">
+                    <img id="pc-foto" src="imagens/equipe-real-pc.jpg" alt="Equipe da BARBER HOUSE em Praia Grande" decoding="async">
                 </div>
                 <div class="conteudo">
                     <h2 class="titulo-conteudo"> EQUIPE <span><br>BARBER HOUSE</br></span> </h2>
@@ -94,17 +144,17 @@
             
              <!-- INICIO DA SECTION SERVICOS  -->
         <section id="servicos">
-                <div class="titulo-catalago">
-                <h1 class="titulo-section"> Principais Serviços </h1>
+                     <div class="titulo-catalago">
+                <h2 class="titulo-section">Principais Serviços</h2>
                 </div>
                 <div class="container-servicos">
                        <!-- INICIO do primeiro item   -->
                     <div class="catalago">
                         <div class="imagem">
-                            <img src="imagens/cabelo e barba.jpg" alt="foto" class="foto-corte">
+                            <img src="imagens/cabelo e barba.jpg" loading="lazy" alt="Corte de cabelo e barba masculino na BARBER HOUSE em Praia Grande" class="foto-corte" decoding="async">
                         </div>
                         <div class="nome-corte">
-                            <h1 class="corte"> Cabelo e barba </h1>
+                            <h3 class="corte">Cabelo e barba</h3>
                             <p class="descricao-corte"> Corte de cabelo e barba feitos, pelos melhores profissionais e com qualidade premium! </p>
                         </div>
                         <div class="rodape">
@@ -130,10 +180,10 @@
                         
                      <div class="catalago"> <!-- INICIO do segundo item   -->
                         <div class="imagem">
-                            <img src="imagens/barba.jpg" alt="foto" class="foto-corte" id="foto2">
+                            <img src="imagens/barba.jpg" loading="lazy" alt="Corte de cabelo e barba masculino na BARBER HOUSE em Praia Grande" class="foto-corte" id="foto2" decoding="async">
                         </div>
                         <div class="nome-corte">
-                            <h1 class="corte"> Barba </h1>
+                            <h3 class="corte">Barba</h3>
                             <p class="descricao-corte"> Corte de cabelo e barba feitos, pelos melhores profissionais e com qualidade premium! </p>
                         </div>
                         <div class="rodape">
@@ -159,11 +209,11 @@
 
                      <div class="catalago"> <!-- INICIO do ultimo item   -->
                         <div class="imagem">
-                            <img src="imagens/americano infantil.jpg" alt="foto" class="foto-corte">
+                            <img src="imagens/americano infantil.jpg" loading="lazy" alt="Corte de cabelo infantil na BARBER HOUSE em Praia Grande" class="foto-corte" decoding="async">
                         </div>
                         <div class="nome-corte">
-                            <h1 class="corte"> Corte infantil </h1>
-                            <p class="descricao-corte"> Corte de cabelo e barba feitos, pelos melhores profissionais e com qualidade premium! </p>
+                            <h3 class="corte">Corte infantil</h3>
+                            <p class="descricao-corte"> Corte de cabelo infantil feito, com cuidado empatia e com qualidade premium! </p>
                         </div>
                         <div class="rodape">
                             <div class="preco">
@@ -188,34 +238,34 @@
 
                 <!-- INICIO DA SECTION AVALIAÇOES   -->
         <section class="section-avaliacoes">
-            <h2 class="titulo-avaliacoes"> Avaliações</h2>
+              <h2 class="titulo-avaliacoes"> Avaliações</h2>
             <div class="conteudo-da-section">
                 <div class="slider-container swiper">
                     <div class="slider-wrapper">
                         <ul class="swiper-wrapper">
                             <li class="avaliacao swiper-slide">
-                                <img src="imagens/foto 1 AVA.jpg" alt="profile" class="profile-image">
+                                <img src="imagens/foto 1 AVA.jpg" loading="lazy" alt="Foto de cliente da BARBER HOUSE" class="profile-image" decoding="async">
                                 <h3 class="name"> Lucas Silva </h3>
                                 <p class="feedback">
                                     "Profissionais de primeira, gosto muito do atendimento"
                                 </p>
                             </li>
                             <li class="avaliacao swiper-slide">
-                                <img src="imagens/foto 2 AVA.jpg" alt="profile" class="profile-image">
+                                <img src="imagens/foto 2 AVA.jpg" loading="lazy" alt="Foto de cliente da BARBER HOUSE" class="profile-image" decoding="async">
                                 <h3 class="name"> Guilherme Santos  </h3>
                                 <p class="feedback">
                                    " Não é apenas um corte, é uma experiência mais que agradável!!! Atendimento nota 1000!!!"
                                 </p>
                             </li>
                             <li class="avaliacao swiper-slide">
-                                <img src="imagens/foto 3 AVA.jpg" alt="profile" class="profile-image">
+                                <img src="imagens/foto 3 AVA.jpg" loading="lazy" alt="Foto de cliente da BARBER HOUSE" class="profile-image" decoding="async">
                                 <h3 class="name"> Carlos Rodrigo  </h3>
                                 <p class="feedback">
                                     "Recomendo barbearia completa profissionais de ótima qualidade ambiente agradável"
                                 </p>
                             </li>
                             <li class="avaliacao swiper-slide">
-                                <img src="imagens/foto 4 AVA.jpg" alt="profile" class="profile-image">
+                                <img src="imagens/foto 4 AVA.jpg" loading="lazy" alt="Foto de cliente da BARBER HOUSE" class="profile-image" decoding="async">
                                 <h3 class="name"> Rodolfo Ferreira </h3>
                                 <p class="feedback">
                                     "Ambiente excelente, boa organização e prático de agendar. Recomendo!!
@@ -224,7 +274,7 @@
                                 </p>
                             </li>
                             <li class="avaliacao swiper-slide">
-                                <img src="imagens/foto 5 AVA.jpg" alt="profile" class="profile-image">
+                                <img src="imagens/foto 5 AVA.jpg" loading="lazy" alt="Foto de cliente da BARBER HOUSE" class="profile-image" decoding="async">
                                 <h3 class="name"> Everton Alves  </h3>
                                 <p class="feedback">
                                     "Espaço excelente, com atendimento diferenciado, conversa boa e trabalho impecável!
@@ -232,7 +282,7 @@
                                 </p>
                             </li>
                             <li class="avaliacao swiper-slide">
-                                <img src="imagens/foto 6.jpg" alt="profile" class="profile-image">
+                                <img src="imagens/foto 6.jpg" loading="lazy" alt="Foto de cliente da BARBER HOUSE" class="profile-image" decoding="async">
                                 <h3 class="name"> Carina Vieira  </h3>
                                 <p class="feedback">
                                     "Fazem exatamente 1 ano que o meu filho esta cortando cabelo com os meninos, Nicolas é autista suporte 2 , e os meninos tem toda paciência do mundo com ele. somos muito gratos pelo carinho e paciência que vcs tem com ele .recomendo muito !!!"
@@ -252,33 +302,38 @@
 
 
             <div class="fundo-teste">
-                <img class="logo-teste" src="imagens/logo sem fundo.png" alt="">
+                <img class="logo-teste" src="imagens/logo sem fundo.png" alt="" decoding="async">
                 <div class="box-texto">
-                    <h1> Onde estamos? </h1>
+                    <h2>Onde estamos?</h2>
                     <p>
-                    Estamos localizados em uma região de fácil acesso, pensada para proporcionar praticidade e comodidade em cada visita.<br> Venha conhecer a BARBER HOUSE e aproveite uma experiência completa de cuidado, estilo e atendimento.</p>
-                    <p class="rua"> <a href="https://maps.app.goo.gl/5PFHR1sUQYQTw66BA" target="_blank" rel="noreferrer"> R. Dair Borges, 36 - Boqueirão, Praia Grande - SP</a><i class="ri-map-pin-line"></i></p>
+                    A BARBER HOUSE é uma barbearia em Praia Grande - SP, localizada no bairro Boqueirão.
+                    Estamos em uma região de fácil acesso, pensada para proporcionar praticidade e comodidade em cada visita.
+                    Venha conhecer a BARBER HOUSE e aproveite uma experiência completa de cuidado, estilo e atendimento.
+                    </p>
+                    <address class="rua"> <a href="https://maps.app.goo.gl/5PFHR1sUQYQTw66BA" target="_blank" rel="noopener noreferrer">R. Dair Borges, 36 - Boqueirão, Praia Grande - SP</a><i class="ri-map-pin-line"></i></address>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d911.1794040995752!2d-46.41407555126959!3d-24.005746811308754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3120ed005%3A0x8d0ccf6936aa260f!2sR.%20Dair%20Borges%2C%2036%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-210!5e0!3m2!1spt-BR!2sbr!4v1790875742653!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe class="local">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d911.1794040995752!2d-46.41407555126959!3d-24.005746811308754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3120ed005%3A0x8d0ccf6936aa260f!2sR.%20Dair%20Borges%2C%2036%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-210!5e0!3m2!1spt-BR!2sbr!4v1790875742653!5m2!1spt-BR!2sbr" width="600" height="450" class="local" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <iframe id="local-mobile" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d911.1794041796685!2d-46.4140756!3d-24.0057468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3120ed005%3A0x8d0ccf6936aa260f!2sR.%20Dair%20Borges%2C%2036%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-210!5e0!3m2!1spt-BR!2sbr!4v1790877901089!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </section>
     </main>
-        <footer>
+
+            <!-- FOOTER -->
+        <footer aria-label="Rodapé da BARBER HOUSE">
             <div class="logo-footer">
-                <img src="imagens/logo sem fundo.png" alt="logo">
+                <img src="imagens/logo sem fundo.png" alt="Logo da BARBER HOUSE" decoding="async">
             </div>
             <div class="servicos-footer">
-                <a href="#"> Corte de Cabelo </a>
-                <a href="#"> Corte e Barba </a>
-                <a href="#"> Limpeza de Pele </a>
-                <a href="#"> Barboterapia  </a>
+                <a href="#servicos">Corte de Cabelo</a>
+                <a href="#servicos">Corte e Barba</a>
+                <a href="#servicos">Limpeza de Pele</a>
+                <a href="#servicos">Barboterapia</a>
             </div>
             <div class="menu-footer">
-                <a href="#"> Barbeiros </a>
-                <a href="#"> Serviços </a>
-                <a href="#"> Localização </a>
-                <a href="#"> Sobre nós </a>
+                <a href="#sobre-equipe">Barbeiros</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#localizacao">Localização</a>
+                <a href="#sobre-equipe">Sobre nós</a>
             </div>
              <ul class="socials-footer">
                 <li><a href="#">
