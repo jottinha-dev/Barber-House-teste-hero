@@ -565,60 +565,6 @@ iframe {
         justify-content: center;
     }
 
-    .sobre-equipe {
-        padding: 2rem 4rem 0rem 4rem;
-        height: 100vh;
-        align-content: center;
-        display: block;
-        overflow: hidden;
-    }
-    .sobre-equipe div.section-content {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-
-    .sobre-equipe .imagem-equipe img#pc-foto {
-        object-fit: cover;
-        min-width: 0;
-        height: 200px;
-        border-radius: 15px;
-        box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.582);
-    }
-    
-    .sobre-equipe .section-content .conteudo {
-         min-width: 0;
-    }
-    .titulo-conteudo {
-        text-align: left;
-        margin: 0px;
-    }
-
-    .titulo-conteudo::after {
-    display: block;
-    content: "";
-    width: 300px;
-    height: 5px;
-    display: block;
-    margin: 10px 0px 10px 0px;
-    background-color: var(--cor-dark);
-    border-radius: 10px;
-}
-
-.sobre-equipe .section-content .conteudo .descricao {
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 1rem;
-   
-}
-
-.sobre-equipe .imagem-equipe {
-        img#mobile-foto { display: block;}
-        img#pc-foto { display: none;}
-    }
-
-
     /* SECAO LOCALIZAÇÃO */
     .section-location {
         flex-direction: column;
