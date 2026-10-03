@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
     <loc>https://jottinha-dev.github.io/Barber-House-teste-hero/</loc>
     <lastmod>2026-10-02</lastmod>
   </url>
@@ -8,3 +12,9 @@
     <loc>https://jottinha-dev.github.io/Barber-House-teste-hero/</loc>
   </url>
 </urlset>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- LINK CUSTOM SWIPPER -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
